@@ -6,18 +6,18 @@ menu:
 
 # SubNav
 subnav:
-  github: "#"
-  weibo: "#"
-  rss: "#"
-  zhihu: "#"
-  #qq: "#"
+  github: "https://github.com/solon-foot"
+  # weibo: "https://weibo.com/p/1005056362842479"
+  rss: "/atom.xml"
+  # zhihu: "https://www.zhihu.com/people/zack-37-96"
+  # qq: ""
   #weixin: "#"
   #jianshu: "#"
   #douban: "#"
   #segmentfault: "#"
   #bilibili: "#"
   #acfun: "#"
-  #mail: "mailto:litten225@qq.com"
+  mail: "mailto:709577425@qq.com"
   #facebook: "#"
   #google: "#"
   #twitter: "#"
@@ -33,11 +33,11 @@ root: /
 # Content
 
 # 文章太长，截断按钮文字
-excerpt_link: true
+excerpt_link: false
 # 文章卡片右下角常驻链接，不需要请设置为false
 show_all_link: '展开全文'
 # 数学公式
-mathjax: false
+mathjax: true
 # 是否在新窗口打开链接
 open_in_new: false
 
@@ -47,9 +47,9 @@ reward_type: 1
 # 打赏wording
 reward_wording: '谢谢你请我吃糖果'
 # 支付宝二维码图片地址，跟你设置头像的方式一样。比如：/assets/img/alipay.jpg
-alipay: 
+alipay: /assets/img/alipay.jpg
 # 微信二维码图片地址
-weixin: 
+weixin: /assets/img/wxpay.jpg
 
 # 目录
 # 目录设定：0-不显示目录； 1-文章对应的md文件里有toc:true属性，才有目录； 2-所有文章均显示目录
@@ -71,7 +71,7 @@ favicon: /assets/img/icon.jpg
 avatar: /assets/img/icon.jpg
 
 # 是否开启分享
-share_jia: true
+share_jia: false
 
 #评论：1、多说；2、网易云跟帖；3、畅言；4、Disqus；5、Gitment
 #不需要使用某项，直接设置值为false，或注释掉
@@ -107,24 +107,24 @@ style:
 # slider的设置
 slider:
   # 是否默认展开tags板块
-  showTags: false
+  showTags: true
 
 # 智能菜单
 # 如不需要，将该对应项置为false
 # 比如
-#smart_menu:
-#  friends: false
+# smart_menu:
+ # friends: false
 smart_menu:
   innerArchive: '所有文章'
   friends: '友链'
   aboutme: '关于我'
 
 friends:
-  友情链接1: http://localhost:4000/
+  沈公子: http://senpng.github.io/
   友情链接2: http://localhost:4000/
   友情链接3: http://localhost:4000/
   友情链接4: http://localhost:4000/
   友情链接5: http://localhost:4000/
   友情链接6: http://localhost:4000/
 
-aboutme: 很惭愧<br><br>只做了一点微小的工作<br>谢谢大家
+aboutme: 有事直接发邮件

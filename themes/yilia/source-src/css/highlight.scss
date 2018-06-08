@@ -16,11 +16,17 @@
 .article-entry pre,
 .article-entry code {
   font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
+  color: #c0341d;
+  
+  border-radius: 3px;
+  padding: 2px 4px;
 }
 .article-entry code {
-  background: #eee;
-  padding: 0 0.3em;
-  border: none;
+  background: #fcedea;
+  //background: #fcedea;
+  // padding: 0 0.3em;
+  
+  
 }
 .article-entry pre code {
   background: none;
