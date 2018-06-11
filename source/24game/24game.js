@@ -1,6 +1,6 @@
 function clean() {
   breast.reset();
-
+  console.clear();
 }
 
 function tdisoper(f0, f1, f2, f3) {
