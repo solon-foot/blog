@@ -23,9 +23,11 @@ function main() {
     canvas = document.getElementById("canvas");
     reDraw();
     canvas.addEventListener("click", selectGrid, true);
+    document.addEventListener("keydown", keyClick, true);
 }
 
-main();
+// main();
+window.onload = main;
 
 function initSelect() {
     var select = document.getElementById("select");
@@ -41,7 +43,10 @@ function init(index) {
 }
 
 function reDraw() {
-    screenWidth = Math.min(getWinSize(), 500);
+    var canvasParent = document.getElementById("canvas_parent");
+
+    // screenWidth = Math.min(getWinSize(), 500);//TODO 修改
+    screenWidth = Math.min(canvasParent.offsetWidth, 500); //TODO 修改
     screenHeight = screenWidth * 1.11;
     item_width = screenWidth / 10;
     padding = item_width / 3;
@@ -88,6 +93,22 @@ function selectGrid(event) {
         draw();
     }
 
+}
+
+function keyClick(event) {
+    if (currentPos != null) {
+        var keyCode = event.keyCode;
+        if (keyCode == 48 || keyCode == 8 || keyCode == 96) {
+            shudu2.shudu[currentPos[0]][currentPos[1]] = 0;
+        } else if (keyCode > 48 && keyCode < 58) {
+            shudu2.shudu[currentPos[0]][currentPos[1]] = keyCode - 48;
+        } else if (keyCode > 96 && keyCode < 106) {
+            shudu2.shudu[currentPos[0]][currentPos[1]] = keyCode - 96;
+        } else {
+            return;
+        }
+        draw();
+    }
 }
 
 function qiujie() {
@@ -262,6 +283,7 @@ function saveImage() {
     var cacheCanvas;
 
     cacheCanvas = document.createElement("canvas");
+
     var width = 300;
     cacheCanvas.width = width;
     cacheCanvas.height = width;

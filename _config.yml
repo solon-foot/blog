@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Litten的博客
+title: Zack的博客
 subtitle: 因为有志，所以有恒
 description: Android Java PHP 技术 教程  魔方 我的世界 Minecraft 
 author: Zack
@@ -40,7 +40,7 @@ highlight:
   enable: true                                                                                                                                                                                               
   auto_detect: true                                                                                                                                                                                          
   line_number: true                                                                                                                                                                                          
-  tab_replace: ''
+  tab_replace: '    '
 
 # Category & Tag
 default_category: uncategorized
