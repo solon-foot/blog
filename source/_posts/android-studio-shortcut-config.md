@@ -1,7 +1,7 @@
 title: android studio 配置参考
 date: 2018-06-08 12:01:01
 tags:
- - Android
+ - android
  - config
  - Android studio
 ---

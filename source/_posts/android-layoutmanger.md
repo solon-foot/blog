@@ -1,6 +1,6 @@
 title: android-layoutmanger
 tags:
-  - Android
+  - android
 date: 2018-06-12 10:39:05
 ---
 
